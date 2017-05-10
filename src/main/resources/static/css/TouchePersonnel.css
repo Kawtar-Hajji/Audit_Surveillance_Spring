@@ -1,0 +1,109 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header{
+    background-color: cadetblue;
+    color: aliceblue;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: brown 3px solid;
+
+}
+header a{
+    color: azure;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+footer li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #zz{
+    float: left;
+}
+header #zz h1 {
+   margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+header .highlight, header .current a{
+    color: crimson;
+    font-weight: bold;
+}
+header a:hover{
+    color: darkseagreen;
+    font-weight: bold;
+}
+#partie1{
+    min-height: 250px;
+    background: url("/img/images2.png") no-repeat 0 20px  ;
+    text-align: center;
+    color: #000000;
+}
+#partie1 h1{
+    margin-top: 100px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#partie1 p{
+    font-size: medium;
+}
+#partie2{
+    padding: 15px;
+    color: beige;
+    background: teal;
+}
+#partie2 h1{
+    float: left;
+}
+#partie2 form{
+    float: right;
+    margin-top: 15px;
+}
+#partie2 input[type="email"]
+{
+    padding:4px;
+    height: 25px;
+    width: 250px;
+}
+.botton{
+    height: 38px;
+    background: powderblue;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: darkslategray;
+}
+#partie3 .patie31{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#partie3 .patie31 img{
+    width: 90px;
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color:#424242;
+    background: #80cbc4;
+    text-align: center;
+}
+

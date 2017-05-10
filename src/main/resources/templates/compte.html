@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://ultraq.net.nz/thymeleaf/layout"
+layout:decorator="templateNumber2">
+<head>
+<meta charset="utf-8"/>
+<title>Compte Professionnel</title>
+</head>
+<body>
+<div layout:fragment="menu">
+<div class="vertical-menu" >
+			  <a th:href="@{/compte}" class="active">Dashboard</a>
+			  <a th:href="@{/profile}">Profile</a>
+			  <a th:href="@{/rapport}">Rapports</a>
+			  <a th:href="@{/historique}">Historique</a>
+		</div>
+</div>
+<div layout:fragment="content">
+
+<div align="justify" style="width:800px; margin:0 auto;"> 
+	<div class="col-md-6">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Ajouter un site</div>
+			<div class="panel-body">
+				<form th:action="@{/addCompte}" method="get">
+					<div>
+						<label>URL site:</label>
+						<input type="text"  name="url"/><br/>
+						<label>Nom du site:</label>
+						<input type="text"  name="nameSite"/><br/>
+						<button type="submit" class="btn btn-primary">Ok</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	<div class="panel panel-primary" >
+			<div class="panel-heading">Liste des sites</div>
+			<div class="panel-body">
+			</div>
+				<table class="table table-striped">
+				<tr>
+					<th>Selectionner</th><th>Nom</th><th>URL</th><th>Modifie</th><th>Supprimer</th>
+				</tr>
+				
+				</table>
+	</div>
+	
+	</div>
+</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://ultraq.net.nz/thymeleaf/layout"
+layout:decorator="templateNumber1">
+
+<head>
+<meta charset="utf-8"/>
+
+<title>Nouveau utilisateur</title>
+<link rel="stylesheet" type="text/css" href="../static/css/style.css"
+th:href="@{/css/style.css}"/>
+</head>
+<body>
+	<div layout:fragment="content">
+	<div class="containerz">
+
+    <form id="signup">
+
+        <div class="header">
+        
+            <h3>Formulaire d'inscription</h3>
+            
+            <p>Veuillez saisir les infos de votre entreprise</p>
+            
+        </div>
+        
+        <div class="sep"></div>
+
+        <div class="inputs">
+        	<input type="text" placeholder="nom de l'entreprise"/>
+        	<input type="text" placeholder="secteur d'activite"/>
+        	<input type="text" placeholder="pays"/>
+        	<input type="text" placeholder="adresse"/>
+        	<input type="text" placeholder="ville"/>
+            <input type="email" placeholder="adresse mail"/>
+        	<input type="text" placeholder="user name"/>
+            <input type="password" placeholder="Mot De Passe" />
+            
+            <div class="checkboxy">
+                <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">J'accept les termes d'utilisation</label>
+            </div>
+            
+            <a id="submit" href="@{/acceuil}">SIGN UP</a>
+        
+        </div>
+
+    </form>
+
+</div>
+​
+	</div>
+      
+</body>
+</html>

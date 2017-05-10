@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8"/>
+<title>Audit Surveillance App</title>
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"
+th:href="@{/css/bootstrap.min.css}"/>
+<link rel="stylesheet" type="text/css" href="../static/css/TouchePersonnel.css"
+th:href="@{/css/TouchePersonnel.css}"/>
+</head>
+<body>
+	<header>
+		<div class="container">
+            <div id="zz">
+                <h1> <span class="highlight">MIAGE </span> For Audit and Monitoring</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a th:href="@{/acceuil}" >Acceuil</a></li>
+                    <li><a th:href="@{/sol}" >Solution</a></li>
+                    <li><a th:href="@{/price}">Prix</a></li>
+                    <li><a th:href="@{/particulier}">Particulier</a></li>
+                    <li><a th:href="@{/signin}">Sign In</a></li>
+                    <li><a th:href="@{/signup}">Sign UP</a></li>
+                </ul>
+            </nav>
+        </div>
+   </header>
+	<section layout:fragment="content"></section>
+<footer>
+<ul>
+                    <li><span class="current"><a th:href="@{/contact}" >Contacter nous</a></span></li>
+                    <li><a th:href="@{/who}" >Qui sommes nous?</a></li>
+                    <li><a th:href="@{/faq}">FAQ</a></li>
+                    <li><a th:href="@{/privacy}">Privacy</a></li>
+                    <li><a th:href="@{/partenaire}">Nous partenaires</a></li>
+                    <li><a th:href="@{/updates}">Dernier mise a jour</a></li>
+                </ul>
+    <p>Team KMHK, Copyright &copy; by IGA-UHA-MIAGE 2017</p>
+</footer>
+
+</body>
+</html>
